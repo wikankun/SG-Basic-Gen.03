@@ -11,8 +11,8 @@ def readData(data1):
 x = readData(data1)
 a = []
 for i in x:
-	if i == 'I': a.append('*')
-	elif ((i == 'and') or (i == 'the') or (i == 'you')): a.append('*'*3)
+	if i.lower() == 'i': a.append('*')
+	elif ((i.lower() == 'and') or (i.lower() == 'the') or (i.lower() == 'you')): a.append('*'*3)
 	else: a.append(i)
 b = ' '.join(a)
 print(b)
